@@ -1,9 +1,23 @@
 <div class="body">
+
+  <div class="top">
+    <span class="top-calc">calc</span>
+    <span class="top-theme">THEME</span>
+    <div class="capsule-container">
+      <span class="numbers">1 2 3</span>
+      <div class="capsule">
+        <div class="red-sphere"></div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="display">
     <form [formGroup]="inputStr">
       <input type="text" formControlName="display" readonly>
     </form>
   </div>
+
   <div class="container">
     <div class="buttons">
       <div class="row">
@@ -28,7 +42,7 @@
         <button (click)="buttonClick($event)" class="btn">.</button>
         <button (click)="buttonClick($event)" class="btn">0</button>
         <button (click)="buttonClick($event)" class="btn">/</button>
-        <button (click)="buttonClick($event)" class="btn">x</button>
+        <button (click)="buttonClick($event)" class="btn">*</button>
       </div>
       <div class="bottomRow">
         <button (click)="clear()" class="btn reset-btn">RESET</button>
@@ -36,4 +50,5 @@
       </div>
     </div>
   </div>
+
 </div>
