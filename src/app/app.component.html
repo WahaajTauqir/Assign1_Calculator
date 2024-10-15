@@ -1,1 +1,39 @@
-<app-calculator></app-calculator>
+<div class="body">
+  <div class="container">
+    <div class="display">
+      <form [formGroup]="inputStr">
+        <input type="text" formControlName="display" readonly>
+      </form>
+    </div>
+    <div class="buttons">
+      <div class="row">
+        <button (click)="buttonClick($event)" class="btn">7</button>
+        <button (click)="buttonClick($event)" class="btn">8</button>
+        <button (click)="buttonClick($event)" class="btn">9</button>
+        <button (click)="clear()" class="btn del-btn">DEL</button>
+      </div>
+      <div class="row">
+        <button (click)="buttonClick($event)" class="btn">4</button>
+        <button (click)="buttonClick($event)" class="btn">5</button>
+        <button (click)="buttonClick($event)" class="btn">6</button>
+        <button (click)="buttonClick($event)" class="btn">+</button>
+      </div>
+      <div class="row">
+        <button (click)="buttonClick($event)" class="btn">1</button>
+        <button (click)="buttonClick($event)" class="btn">2</button>
+        <button (click)="buttonClick($event)" class="btn">3</button>
+        <button (click)="buttonClick($event)" class="btn">-</button>
+      </div>
+      <div class="row">
+        <button (click)="buttonClick($event)" class="btn">.</button>
+        <button (click)="buttonClick($event)" class="btn">0</button>
+        <button (click)="buttonClick($event)" class="btn">/</button>
+        <button (click)="buttonClick($event)" class="btn">x</button>
+      </div>
+      <div class="bottomRow">
+        <button (click)="clear()" class="btn reset-btn">RESET</button>
+        <button (click)="calculate()" class="btn equal-btn">=</button>
+      </div>
+    </div>
+  </div>
+</div>
