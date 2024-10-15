@@ -1,10 +1,10 @@
 <div class="body">
+  <div class="display">
+    <form [formGroup]="inputStr">
+      <input type="text" formControlName="display" readonly>
+    </form>
+  </div>
   <div class="container">
-    <div class="display">
-      <form [formGroup]="inputStr">
-        <input type="text" formControlName="display" readonly>
-      </form>
-    </div>
     <div class="buttons">
       <div class="row">
         <button (click)="buttonClick($event)" class="btn">7</button>
