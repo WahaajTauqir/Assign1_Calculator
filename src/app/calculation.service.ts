@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { evaluate } from 'mathjs';
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class CalculationService {
   calculate(expression: string): string {
     try {
-      return eval(expression);
+      return evaluate(expression).toString();
     } catch (e) {
       return 'Error';
     }

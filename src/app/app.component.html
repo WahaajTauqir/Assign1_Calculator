@@ -14,7 +14,7 @@
 
   <div class="display">
     <form [formGroup]="inputStr">
-      <input type="text" formControlName="display" readonly>
+      <input type="text" formControlName="display" readonly [value]="inputStr.controls['display'].value | numberFormat">
     </form>
   </div>
 

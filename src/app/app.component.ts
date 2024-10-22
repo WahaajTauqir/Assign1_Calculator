@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { CalculationService } from './calculation.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NumberFormatPipe } from './number-format.pipe';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,
-  imports: [ReactiveFormsModule]
+  imports: [ReactiveFormsModule, NumberFormatPipe]
 })
 export class AppComponent implements OnInit {
   inputStr!: FormGroup;
