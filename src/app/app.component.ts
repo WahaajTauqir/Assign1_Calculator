@@ -23,7 +23,10 @@ export class AppComponent implements OnInit {
   }
 
   buttonClick(event: any): void {
-    const buttonText = event.target.textContent;
+    let buttonText = event.target.textContent;
+    if (buttonText === 'x') {
+      buttonText = '*';
+    }
     const currentValue = this.inputStr.controls['display'].value;
     this.inputStr.controls['display'].setValue(currentValue + buttonText);
   }

@@ -27,6 +27,7 @@ html, body {
   font-size: 2rem;
   padding: 10px;
   color: white;
+  font-weight: bold;
   border-radius: 8px;
   border: none;
   background-color: #181F32;
@@ -38,10 +39,10 @@ html, body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #252D44;
+  background-color: #252D44
 }
 
-.top {
+.top{
   display: flex;
   justify-content: space-between;
   align-items: center;
